@@ -1,0 +1,14 @@
+# Motivation
+The term **experiment** is defined as the systematic procedure carried out under controlled conditions in order to discover an unknown effect, to test or establish a hypothesis, or to illustrate a known effect.
+
+When analyzing a process, experiments are often used to evaluate:
+- Which process **inputs** have a significant impact on the process **output**.
+- What the **target level** of those inputs should be to achive a desired result (output)
+
+Experiments can be designed in many different ways to collect this information.
+
+---
+# Experiments Design Guidelines
+- Uncontrollable factors that include variation under normal operating conditions are referred to as "Noise Factors".
+These Factors, such as multiple machines, multiple shifts, raw materials, humidity, ... can be built into the experiment so that their variation doesn't get concentrated into the unexplained, or experiment error.
+- A key strength of Designed Experiments is the ability to determine factors and settings that minimize the effect of the uncontrollable factors.
