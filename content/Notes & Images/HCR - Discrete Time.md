@@ -1,4 +1,7 @@
-# Discrete Time
+---
+aliases:
+  - Discrete Time
+---
 The computer works step, by step (discrete time)
 
 ![[Pasted image 20220329102645.png]]

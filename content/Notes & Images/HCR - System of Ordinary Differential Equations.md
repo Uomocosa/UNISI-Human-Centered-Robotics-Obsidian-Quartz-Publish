@@ -1,4 +1,7 @@
-# Mathematics
+---
+aliases:
+  - System of Ordinary Differential Equations
+---
 Differential Equations
 -> **ODE** (Ordinary Differential Equation)
 $$

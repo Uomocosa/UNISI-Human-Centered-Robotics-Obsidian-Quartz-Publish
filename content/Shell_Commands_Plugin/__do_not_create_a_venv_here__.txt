@@ -1,0 +1,1 @@
+Copy this file to avoid a pipenv venv to be created automatically here (in this folder)

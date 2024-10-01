@@ -1,13 +1,13 @@
-# Human Eye
-Retina measures about $5 \times 5$ cm$^2$  and contains $10^8$ sampling elements (roots and cones).
-- Spectral resolution $\sim 0.01$° over a $150$° field of view (NOT evenly distributed)
-- $11$ bit/element, $10$ Hz resolution
-
--> Resulting in a total of $3$ GB/s (considering both eyes)
-
-# Camera
-The cameras of today only archive information up to a rate of $12$MB/s (hundreds of times less than the human eye)
-
-To get a 3d effect we use 2 cameras (one per eye) which project different 2D images, the brain does the rest.
-
-![[Pasted image 20220329100633.png]]
+---
+aliases:
+  - Human Eye vs Camera
+---
+- ***Human Eye***:
+	- Retina measures about $5 \times 5$ cm$^2$  and contains $10^8$ sampling elements (roots and cones).
+	- Spectral resolution $\sim 0.01$° over a $150$° field of view (NOT evenly distributed)
+	- $11$ bit/element, $10$ Hz resolution
+	- ==Resulting in a total of $3$ GB/s (considering both eyes)==.
+----
+- ***Camera***
+	- The cameras of today only archive information up to a rate of $12$MB/s (hundreds of times less than the human eye)
+	- To get a 3d effect we use 2 cameras (one per eye) which project different 2D images, the brain does the rest:<br>![[Pasted image 20220329100633.png|444]]

@@ -1,10 +1,19 @@
-# Method of Constant Stimuli - DT
-This method can be also used for measuring the Differential Threshold.
+---
+aliases:
+  - DT
+  - method of constant stimuli (DT)
+  - method of constant stimuli (differential threshold)
+  - space errors
+  - time errors
+  - unbiased estimates
+  - DT (Differential Threshold)
+---
+This method can be also used for measuring the [[HCR - Definition of 'Differential Threshold'|differential threshold]].
 
 The task of the observer is to examine pairs of stimuli and to judge which produces a bigger magnitude
 
-- One of the two has a fixed value: *STANDARD STIMULUS (St)*
-- The other one has a variable value, and is called *COMPARISON STIMULUS (Co)* and is changed from trial to trial, being sometimes greater than, sometimes smaller, and sometimes equal to the value of the standard stimulus.
+- One of the two has a fixed value: *STANDARD STIMULUS (**St**)*
+- The other one has a variable value, and is called *COMPARISON STIMULUS (**Co**)* and is changed from trial to trial, being sometimes greater than, sometimes smaller, and sometimes equal to the value of the standard stimulus.
 
 Usually five, seven or nine values of comparison, separated by equal distances on the physical scale, are employed.
 
@@ -20,19 +29,16 @@ The two stimuli must be presented to different receptive areas at the same time,
 The particular circumstances of an experiment usually determine whether the stimuli are presented simultaneously or successively and to the same or to different receptive areas.
 
 Both the conditions may lead to certain errors and these have to be controlled.
-<br>
-<br>
-###### Space Errors
-If stimuli are presented to different receptive areas judgment may be affected by differences between the receptive area as well as differences between stimuli.
 
-To control the effect of *space error*, the standard stimulus may be presented on half of the trials to one receptor area, and on the half of the trials to the other receptor area.
-In this way the effect of spatial location would be neutralized.
-<br>
-<br>
-###### Time Errors
-To control the effects of *time errors*, the standard stimulus may be presented on half of the trials first and on half of the trials after the comparison.
-In this way the effect of temporal location would be neutralized.
-<br>
-<br>
-###### Unbiased estimates
-The method of counter-balancing spatial location or temporal order of the standard and comparison stimuli is based on the assumption that, when the results from all trials are combined, the effect of the space or time errors will cancel, providing unbiased estimate of DT or AT.
+----
+- ***Space Errors***
+	- If stimuli are presented to different receptive areas judgment may be affected by differences between the receptive area as well as differences between stimuli.
+	- To control the effect of *space error*, the standard stimulus may be presented on half of the trials to one receptor area, and on the half of the trials to the other receptor area.
+	- In this way the effect of spatial location would be neutralized.
+----
+- ***Time Errors***
+	- To control the effects of *time errors*, the standard stimulus may be presented on half of the trials first and on half of the trials after the comparison.
+	- In this way the effect of temporal location would be neutralized.
+----
+-  ***Unbiased estimates***
+	- The method of counter-balancing spatial location or temporal order of the standard and comparison stimuli is based on the assumption that, when the results from all trials are combined, the effect of the space or time errors will cancel, providing unbiased estimate of [[HCR - Method of Constant Stimuli (Differential Threshold)|DT]] or [[HCR - Psychophysical Measurement Methods|AT]].

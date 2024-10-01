@@ -1,7 +1,9 @@
+#NOT_SURE_ABOUT_THIS  `Old notes taken really fast`
 # Bounding Box
 Let's define the shape of our triangles with equations:
 ![[Pasted image 20220404095332.png]]
 (Triangles equations are planes equations)
+#NOT_SURE_ABOUT_THIS `Nel disegno ho rappresentato due linee, è sbagliato, in quanto` $ax +by +cz + d$ `in uno spazio 3D rappresenta un piano e non una linea, per ottenere una linea in uno spazio 3D è necessario intersecare due piani.`
 
 We can define being in an object if we are inside the **bounding box**, then we can say that we are "touching" that object.
 ![[Pasted image 20220404095414.png]]

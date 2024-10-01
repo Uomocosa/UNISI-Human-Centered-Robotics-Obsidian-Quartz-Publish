@@ -1,0 +1,60 @@
+***Ricorda***:
+
+> ***Esempio ODE Standard***:<br>![[Pasted image 20240905120929.png]]
+> Formula (***ODE 2° ordine***):$$M \ddot x + B \dot x + kx = F $$Approssimazione ad un sistema di due equazioni differenziali di ***1° ordine***:$$ x =  \left(\begin{array}{l} x \\ \dot x   \end{array}\right) = \left(\begin{array}{l} x_1 \\ x_2 \end{array}\right)$$Riconducendo il tutto alla forma $\dot x = Ax + Bu$ dove $u = F$ :$$\left[\begin{array}{c} \dot x_1 \\ \dot x_2  \end{array}\right] = \left[\begin{array}{c} 0 & 1 \\ -{\large{k\over M}} & -{\large{B\over M}} \end{array}\right]  \left[\begin{array}{l} x_1 \\ x_2 \end{array}\right] + \left[\begin{array}{c} 0 \\ {\large{1\over M}} \end{array}\right]F$$In generale defineremo:$$\dot x(t) = F(x(t) ,\ u(t))$$Ma i calcolatori lavorano nel discreto, per cui $\dot x(t)$ non esiste propriamente, e:$$x(t) \to x(t_0+ k \kern1px h) \kern15px \Rightarrow \kern15px F\left(x(t_0 + k \kern1px h)) ;\ u(t_0 + k \kern1px h)\right)$$Dove:
+> - $h$ è l'intervallo.
+> - $k \in \mathbb{N}$ .<br> #IMPORTANTE Vengono usate le stesse lettere come nell'[[HCR - Rendering Aptico (Lecture)|algoritmo di rendering]], ma in questo caso $k$ è un numero puro intero, $h$ è una costante di tempo.
+
+> Per determinare $\dot x$ si utilizza il **metodo di Eulero**, il quale consiste nell'approssimare $F$ alla sua **espansione di Taylor** al primo ordine:$$x(t_0 + h) = x_0 + \left.{dx \over dt}\right|_{t_0} \cdot h = x_0 + F\left(x(t_0) ;\ u(t_0)\right) \cdot h $$***N.B.:*** Se si conoscessro tutte le derivate di $F$ in un punto si potrebbe prevederla in un futuro qualsiasi.
+> Quindi possiamo dire che:$$\begin{array}{l} &\Rightarrow& x(kh+h) &=&  x(kh) + F(x(kh ,\ u(kh)) \cdot h  \\[-5px]&\kern3px\downarrow&\\[-5px] &\Rightarrow& x((k+1)h) &=&  x(kh) + F(x(kh ,\ u(kh))  \cdot h  \\[-5px]&\kern3px\downarrow&\\[-5px]   &\Rightarrow& x(k+1) &=& x(k) + F\left(x(k),\ u(k)\right)  \cdot h   \end{array}$$ Tale approssimazione ha però forti limitazioni, si prenda ad esempio una molla:$$F(x, u) = -k_e \cdot x$$($k_e$ : ***coefficiente elastico***)<br>![[Pasted image 20240905121857.png]]Secondo l'**equazione di Eulero**, e alla formula che abbiamo visto prima:$$x(k+1) = x(k) + F\left(x(k),\ u(k)\right)  \cdot h$$Possiamo quindi scrivere che per questo esempio avremo:$$\begin{array}{l} x(k+1) &=& x(k) + \left(-k_e \cdot  \kern1px x(k)\right) \cdot h   \\[-5px]&\kern3px\downarrow&\\[-5px] &=& \underbrace{(1-k_e \cdot h)}_{\begin{array}{l} \large A \kern7px \end{array}} \kern2px x(k)   \end{array}$$Dove: #IMPORTANTE 
+> - $k \in \mathbb{N}$, rappresenta il moltilplicatore dell'instante $h$ ⇒$kh$.
+> - $k_e$ è il ***coefficiente elastico***
+> 
+ > Poiché si è nel caso monodimensionale:$$\Rightarrow \operatorname{eig}(A) = (1- k_e \cdot h)$$Per la stabiltà si impone che $\left|1 - k_e \cdot h\right|\lt 1$.
+ > (*Ovvero un sistema a tempo discreto $x({k+1})​=Ax(k)$ è **asintoticamente stabile**, o semplicemente **stabile** se tutti gli **autovalori** della matrice $A$ hanno **modulo** (cioè valore assoluto) **strettamente minore di $1$**. Questo implica che, a lungo termine, le soluzioni del sistema tenderanno a $0$, o a un punto di equilibrio*):$$\Rightarrow \left\{\begin{array}{l} 1 - k_eh \lt 1 \\ 1 - k_eh \gt -1 \end{array}\right. \kern10px\Rightarrow\kern10px \left\{\begin{array}{l} h \gt 0 \\ h \lt -{\large{2 \over k_e}} \end{array}\right. \kern10px\Rightarrow\kern10px 0 \lt h \lt -{{2 \over k_e}} \kern10px,\kern15px k_e \in R^{+}$$Dunque più alto è $k_e$ , più $h$ diventa piccolo e peggiore è il *real-time*.
+> ==Quando si parla di *real-time* si intende un $h$ abbastanza grande in modo che il calcolatre abbia tempo di appunto calcolare il risultato, o l'approssimazione==.
+> Il fatto che riscontriamo un problema numerico fa capire che l'approssimazione è piuttosto grossolana.
+
+> Vediamo invece lo stesso esempio, ma stavolta si utilizza il **metodo del mid-point**, il quale considera il anche secondo termine derivato dell'espansione.
+> Si supponga di avere un sistema ad evoluzione libera:$$x(t_0 + h) = x_0 + \left.{dx \over dt}\right|_{t_0} \cdot h + \left.{dx^2 \over dt^2}\right|_{t_0} \cdot {h^2 \over 2} $$La derivata seconda è stabilita sempre tramite l'**espansione di Taylor** svolta su $F$ :$$\begin{array}{l} F(x_0 +\Delta x) = F(x_0) + \underbrace{\left.{\large{dF \over dx}}\right|_{x_0}}_{\kern1px \downarrow} \cdot \Delta x  \\[-5px] {\large{dx^2 \over dt}} = {\large{dF(x(t)) \over dt }}\kern13px = \kern14px {\overbrace{\large{dF(x(t)) \over dx }}} \cdot {\large{dx \over dt}} =  \left.{\large{dF \over dx }}\right|_{x_0} \cdot F(x_0)       \end{array}$$Dove:$$\left.{{dF \over dx }}\right|_{x_0} = {F(x_0 + \Delta x) - F(x_0) \over \Delta x} $$Ma non si conosce $\Delta x$, secondo il metodo del mid-point:$$\Delta x = {h \over 2} F(x_0)$$In modo da semplificare questa espressione.
+> Dunque sostituendo tutto nell'equazione iniziale:$$x(t_0 + h) = x_0 + h\cdot F\left( x_0 + {h \over 2} F(x_0) \right) $$Che possiamo scrivere propiamente in **tempo discreto**, utilizzando i dati del problema come:$$x(k+1) = \left[ 1 - k_e \kern1px h +  {{h^2 \over 2}}k_e^2 \right] x(k)$$Il termine aggiuntivo $\left({{h^2 \over 2}}k_e^2\right)$ permette $h$ maggiori.
+
+----
+
+La dinamica in generale degli oggetti è descrivibile attraverso **ODE** e il problema più grande in simulazione è troncare risolutori di equazioni differenziali al fine di avere il **real-time**.
+Si fa dunque uso di semplificazioni.
+
+Un esempio di oggetto dinamico è:<br>![[Pasted image 20240905120929.png]]
+Con **ODE**:$$m \ddot x + B \dot x + kx = F $$Quindi un **ODE** di **2° ordine** e **dipende dal tempo**.
+Si approssima ad un sistema di due equazioni differenziali di **1° ordine**:$$ x =  \left(\begin{array}{l} x \\ \dot x   \end{array}\right) = \left(\begin{array}{l} x_1 \\ x_2 \end{array}\right)$$La dimensione del vettore è pari all'ordine dell'equazione (quindi: $2$).
+Risolvendolo:$$\begin{array}{l}    &\Rightarrow&   \dot x_1 = x_2   \\[-5px] & \kern3px \downarrow & \\[-5px] &\Rightarrow&    m \dot x_2 + B x_2 + k x_1 = F   \\[-5px] & \kern3px \downarrow & \\[-5px] &\Rightarrow&   \dot x_2 = {\large{1 \over m}}\left(-k x_{\normalsize 1} - B x_{\normalsize 2} + F \kern1px \right) \end{array}$$Dunque riconducendo il tutto alla forma $\dot x = Ax + Bu$ dove $u = F$ :$$\left[\begin{array}{c} \dot x_1 \\ \dot x_2  \end{array}\right] = \left[\begin{array}{c} 0 & 1 \\ -{\large{k\over m}} & -{\large{B\over m}} \end{array}\right]  \left[\begin{array}{l} x_1 \\ x_2 \end{array}\right] + \left[\begin{array}{c} 0 \\ {\large{1\over m}} \end{array}\right]F$$
+
+
+Si consideri ora lo spostamento di un oggetto in uno spazio 3D (esempio caso multivariable):$$m \ddot x = F$$Dove: $$\dot x = \left[\begin{array}{c} x \ y \ z  \end{array}\right]^{\tiny T}$$Si definisce lo stato:$$\lambda = \left(x ,\ y ,\ z ,\ \dot x ,\ \dot y ,\ \dot z\right)^{\tiny T} = \left(\lambda_1 ,\ \ldots ,\ \lambda_6 \right)^{\tiny T}$$Per passare a $6$ equazioni differenziali di grado $1$:$$\left.\begin{array}{l} \dot \lambda_1 = \lambda_4 && \lambda_4 = {\large{F_{\normalsize x} \over m_x}} \\[5px] \dot \lambda_2 = \lambda_5 && \lambda_5 = {\large{F_{\normalsize y} \over m_y}} \\[5px] \dot \lambda_3 = \lambda_6 && \lambda_6 = {\large{F_{\normalsize z} \over m_z}}  \end{array}\right.$$Dove: le componenti $m_x ,\ m_y ,\ m_z$ della massa sono uguali $(m)$, ma quelle dell'inerzia sono diverse:<br> #NOT_SURE_ABOUT_THIS `Quali sono i componenti dell'inerzia?` $$\dot \lambda = \left[\begin{array}{c} O_3 & I_3 \\ O_3& O_3 \end{array}\right] \lambda + \left[\begin{array}{c}  O_3 \\[5px] \begin{array}{c} m & 0 & 0 \\ 0 & m & 0  \\ 0 & 0 & m \end{array}  \end{array}\right] \left[\begin{array}{c} F_x \\ F_y \\ F_z  \end{array}\right]$$Dove:
+- $O_3$ è una matrice $[3 \times 3]$ di soli $0$.
+- $I_3$ è la matrice d'indentità $[3 \times 3]$.
+- Quindi: $$\begin{array}{l} \left(\lambda_1 ,\ \lambda_2 ,\ \lambda_3 ,\ 0 ,\ 0 ,\ 0 \right) = \left[\begin{array}{c} O_3 & I_3 \\ O_3& O_3 \end{array}\right] \lambda \\[7px] \left(0 ,\ 0 ,\ 0 ,\ \lambda_4 ,\ \lambda_5 ,\ \lambda_6 \right) = \left[\begin{array}{c}  O_3 \\[5px] \begin{array}{c} m & 0 & 0 \\ 0 & m & 0  \\ 0 & 0 & m \end{array}  \end{array}\right] \left[\begin{array}{c} F_x \\ F_y \\ F_z  \end{array}\right] \end{array}$$ 
+
+In generale:$$\dot x(t) = F(x(t) ,\ u(t))$$Ma i calcolatori lavorano nel discreto, per cui $\dot x(t)$ non esiste propriamente, e:$$x(t) \to x(t+ k \kern1px h) \kern15px \Rightarrow \kern15px F\left(x(t_0 + k \kern1px h)) ;\ u(t_0 + k \kern1px h)\right)$$Dove:
+- $h$ è l'intervallo.
+- $k \in \mathbb{N}$ .
+- #IMPORTANTE Vengono usate le stesse lettere come nell'[[HCR - Rendering Aptico (Lecture)|algoritmo di rendering]], ma in questo caso $k$ è un numero puro intero, $h$ è una costante di tempo.
+
+
+Per determinare $\dot x$ si utilizza il **metodo di Eulero**, il quale consiste nell'approssimare $F$ alla sua **espansione di Taylor** al primo ordine:$$x(t_0 + h) = x_0 + \left.{dx \over dt}\right|_{t_0} \cdot h = x_0 + F\left(x(t_0) ;\ u(t_0)\right) \cdot h $$***N.B.:*** Se si conoscessro tutte le derivate di $F$ in un punto si potrebbe prevederla in un futuro qualsiasi.
+
+Tale approssimazione ha però forti limitazioni, si prenda ad esempio una molla:$$F(x, u) = -kx$$![[Pasted image 20240905121857.png]]
+Secondo l'**equazione di Eulero**:$$\begin{array}{l}   x(t_0 + h) &=& x((k+1)h) &=&  x(kh) + F(x(kh ,\ u(kh)) \kern1px h   \\[-5px]&\kern3px\downarrow&\\[-5px] &=& x(k+1) &=& x(k) + \left(-k \kern1px x(k)\right) \kern1px h   \\[-5px]&&&\kern3px\downarrow&\\[-5px] &&&=& \underbrace{(1-kh)}_{\begin{array}{l} \large A \kern7px \end{array}} \kern1px x(k)   \end{array}$$Poiché si è nel caso monodimensionale:$$\Rightarrow \operatorname{eig}(A) = (1- kh)$$Per la stabiltà si impone che $\left|1 - kh\right|\lt 1$ :$$\Rightarrow \left\{\begin{array}{l} 1 - kh \lt 1 \\ 1 - kh \gt -1 \end{array}\right. \kern10px\Rightarrow\kern10px \left\{\begin{array}{l} h \gt 0 \\ h \lt -{\large{2 \over k}} \end{array}\right. \kern10px\Rightarrow\kern10px 0 \lt h \lt -{{2 \over k}} \kern10px,\kern15px k \in R^{+}$$Dunque più che $k$ è alto, più $h$ diventa piccolo e peggiore è il *real-time*.
+Il fatto che si ha un problema numerico fa capire che l'approssimazione è piuttosto grossolana.
+
+Si utilizza dunque il **metodo del mid-point**, il quale considera il secondo termine derivato dell'espansione.
+
+Si supponga di avere un sistema ad evoluzione libera:$$x(t_0 + h) = x_0 + \left.{dx \over dt}\right|_{t_0} \cdot h + \left.{dx^2 \over dt^2}\right|_{t_0} \cdot {h^2 \over 2} $$La derivata secondo è stabilita sempre tramite l'**espansione di Taylor** svolta su $F$ :$$\begin{array}{l} F(x_0 +\Delta x) = F(x_0) + \underbrace{\left.{\large{dF \over dx}}\right|_{x_0}}_{\kern1px \downarrow} \cdot \Delta x  \\[-5px] {\large{dx^2 \over dt}} = {\large{dF(x(t)) \over dt }}\kern13px = \kern14px {\overbrace{\large{dF(x(t)) \over dx }}} \cdot {\large{dx \over dt}} =  \left.{\large{dF \over dx }}\right|_{x_0} \cdot F(x_0)       \end{array}$$Dove:$$\left.{{dF \over dx }}\right|_{x_0} = {F(x_0 + \Delta x) - F(x_0) \over \Delta x} $$Ma non si conosce $\Delta x$, secondo il metodo:$$\Delta x = {h \over 2} F(x_0)$$In modo da semplificare questa espressione.
+Dunque sostituendo tutto nell'equazione iniziale:$$...Calcoli...$$ #TODO `Riscrivere i calcoli in fondo all pagina`
+Otteremo infine, in tempo "continuo":$$x(t_0 + h) = x_0 + h\kern2px F\left( x_0 + {h \over 2} F(x_0) \right) $$Ed in **tempo discreto**:$$x(k+1) = \left[ 1 - kh +  {{h^2 \over 2}}k^2 \right] x(k)$$Il termine aggiuntivo permette $h$ maggiori.
+
+-----
+- ***Calcoli per arrivare alla conclusione***:<br>![[Pasted image 20240905122441.png]]
+	- ( #TODO `Non ho voglia di riscriverla per bene, ma da notare che nelle note viene scritto` $Ke$ `o` $K_e$ `il termine` $e$ `viene usato per distinguere questo il coeffiente d'attrito trovato in precedenza, in ongi caso questi termini io li ho scritti in queste note come:` $k$ `E HO SBAGLIATO, è utile differenziarli, ci sarebbero da riscriverli tutti` )
+
+

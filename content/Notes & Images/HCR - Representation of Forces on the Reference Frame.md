@@ -1,4 +1,7 @@
-# Representation of the force on the Reference Frame
+---
+aliases:
+  - Representation of the force on the Reference Frame
+---
 Every force on an object can be represented in the object **RF** (Reference Frame) usually defined as its *barycenter* by another Force plus a Torque.
 ![[Pasted image 20220404103945.png]]
 

@@ -1,4 +1,8 @@
-# Triangular Meshes
+---
+aliases:
+  - Proxy Point for Triangular Meshes
+---
+
 ![[Pasted image 20220328152827.png]]
 
 We can create a plane with 3 points (~ex.: $T_1$: triangle 1, formed by $x_1,\  x_2, \ x_3$)

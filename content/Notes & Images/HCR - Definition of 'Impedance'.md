@@ -1,10 +1,11 @@
-# Impedance
-**Impedance**: $Z(s)$
--> $F(s) = Z(s) \cdot \Large \dot{\normalsize X}\normalsize(s)$
+---
+aliases:
+  - Impedance
+---
+**Impedance**: $Z(s)$, such that:$$F(s) = Z(s) \cdot \Large \dot{\normalsize X}\normalsize(s)$$For a given force the smaller the impedance ⇒ the higher is the velocity and viceversa.
 
-For a given force the smaller the impedance -> the higher is the velocity and viceversa.
-
-###### ~ Ex.: Mass-Spring Problem:
+----
+- ***~ Ex.: Mass-Spring Problem***
 $$
 \begin{array}{l}
 M\ddot x(t) + \beta \dot x(t) + kx(t) = F(t)
@@ -24,9 +25,5 @@ M\ddot x(t) + \beta \dot x(t) + kx(t) = F(t)
 $$
 
 ---
-### Impedance:
-For a given system the higher is the **impedance**, the lower will be its velocity.
-$$
-Z(s) := \frac{F(s)}{\Large \dot{\normalsize X}\normalsize(s)}
-$$
-An higher impedance brings more stability to the system.
+- ***Impedance***:
+	- For a given system the higher is the **impedance**, the lower will be its velocity:$$ Z(s) := \frac{F(s)}{\Large \dot{\normalsize X}\normalsize(s)} $$==An higher impedance brings more stability to the system==.<br>It is the opposite of [[HCR - Definition of 'Compliance'|Compliance]].

@@ -1,4 +1,7 @@
-# Grasping vs Manipulation:
+---
+aliases:
+  - Grasping vs Manipulation
+---
 - **GRASPING**: Holding an object (it moves with me but is relatively still)
 - **MANIPULATION**: Hold an object and control its *trajectory* (specific to the object)
 

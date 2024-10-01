@@ -1,0 +1,22 @@
+---
+aliases:
+  - cono d'attrito
+---
+- ***Cono d'Attrito, definizione, spiegazione ed esempi***:<br>(*ChatGPT 4o*)
+	- Il **cono d'attrito** è un concetto utilizzato in meccanica e robotica per descrivere le forze che possono essere applicate su un oggetto in modo da prevenire lo slittamento tra due superfici in contatto.
+	- ***Definizione***:<br>Il cono d'attrito rappresenta la regione spaziale entro cui la forza di contatto tra due superfici deve rimanere affinché il contatto sia stabile, ossia per evitare che una delle superfici scivoli rispetto all'altra.
+	- ***Spiegazione***:<br>Quando due superfici sono in contatto, la forza di attrito agisce lungo la direzione opposta al possibile slittamento.<br>La forza d'attrito ha un limite massimo, che dipende dal **coefficiente di attrito** tra le due superfici e dalla **normale** al piano di contatto (cioè la forza perpendicolare alle superfici).<br>Se la componente tangenziale della forza di contatto (la forza che potrebbe causare il movimento relativo) è minore di questo limite, l'oggetto rimane fermo.
+		- Il **cono d'attrito** è una rappresentazione geometrica tridimensionale di questo limite.<br>Il suo asse coincide con la direzione della forza normale, mentre il suo angolo dipende dal coefficiente di attrito tra le superfici.<br>Più grande è il coefficiente di attrito, più largo è il cono.
+		- Se la forza applicata rimane all'interno di questo cono, non ci sarà slittamento.
+		- Se invece la forza esce dal cono (ovvero la componente tangenziale della forza è troppo grande), avviene lo slittamento.
+	- ***Formula***:
+		- La forza d'attrito massima è data dalla formula:$$F_{tangenziale} \leq \mu \cdot F_{normale}$$Dove:
+		- $\mu$ è il coefficiente di attrito.
+		- $F_{normale}$ è la forza normale, perpendicolare al piano di contatto.
+	- ***Esempio***:<br>Immagina di avere una scatola posata su un piano inclinato:
+		- La forza di attrito tra la scatola e il piano agisce perpendicolarmente alla forza che tende a farla scivolare lungo il piano.<br>Se la scatola è ferma, vuol dire che la forza tangenziale che tenta di muoverla (dovuta alla gravità) è contenuta all'interno del cono d'attrito.
+		- Man mano che aumenti l'inclinazione del piano, la forza tangenziale aumenta, e la scatola potrebbe iniziare a scivolare se la forza supera il limite definito dal cono d'attrito.
+	- ***Applicazione nella robotica***:<br>Nel contesto del **grasping** robotico, il cono d'attrito è utilizzato per modellare le forze applicate dalle dita del robot su un oggetto.<br>Affinché la presa sia stabile, le forze esercitate dalle dita devono rientrare all'interno del cono d'attrito in ciascun punto di contatto, altrimenti l'oggetto potrebbe scivolare dalle mani del robot.
+	- ***Visualizzazione***:<br>Immagina un cono con la punta situata nel punto di contatto tra due superfici.<br>L'asse del cono è allineato con la forza normale, e l'ampiezza del cono è determinata dal coefficiente di attrito.<br>Le forze all'interno di questo cono mantengono l'oggetto stabile, mentre quelle al di fuori ne causano lo slittamento.
+		- Questa idea è fondamentale per garantire che un oggetto sia afferrato correttamente, specialmente in operazioni che richiedono precisione e stabilità, come nella manipolazione robotica.
+----

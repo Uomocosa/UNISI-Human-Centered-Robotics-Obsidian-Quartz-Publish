@@ -19,7 +19,7 @@
 ![[HCR - Definition of 'External Wrench']]
 
 ---
-![[HCR - Grasp Matrix]]
+![[Notes & Images/HCR - Grasp Matrix]]
 
 ---
 ![[HCR - Change of the Normal during Grasping]]

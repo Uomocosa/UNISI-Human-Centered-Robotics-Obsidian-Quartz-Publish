@@ -1,0 +1,9 @@
+$$
+\left\{
+\begin{array}{l}
+AAAAAA
+\\
+AAAAAA
+\end{array}
+\right.
+$$

@@ -1,0 +1,19 @@
+- ***Exercise 1: Linear Algebra*** ^exercise-1
+	- Find the solution(s) of this linear system:$$Ax = y$$Where:$$A = \left[\begin{array}{l} 1 & 2 & 1 \\ 2 & 4 & 2 \\ 0 & 0 & 3\end{array}\right] \kern5px, \kern15px y= \left[\begin{array}{l} 4 \\ 8 \\ 3 \end{array}\right]$$**Tip**: Solve the problem using the concept of [[HCR - Rango Massimo|RANK of matrices]] and discuss how many solutions the system has.
+- ***Exercise 2: Grasping*** 
+	- ***(a)*** Describe what you know about internal forces. What are they? Why are they important? ^exercise-2a
+	- ***(b)*** Given the simple 3D grasp:<br>![[Pasted image 20240914173601.png|222]]<br>And assuming a hard finger contact model at each contact, compute the subspace of internal forces. ^exercise-2b
+- ***Exercise 3: Haptics*** 
+	- ***(a)*** Describe the concept of transparency. ^exercise-3a
+	- ***(b)*** Compute it in terms of impedance and transfer function. ^exercise-3b
+----
+- ***Solution***:
+	- (*[[#^exercise-1|Exercise 1: Linear Algebra]]*) #TODO 
+	- (*[[#^exercise-2a|Exercise 2: Grasping - a]]*) #TODO 
+	- (*[[#^exercise-2b|Exercise 2: Grasping - b]]*) #TODO 
+	- (*[[#^exercise-3a|Exercise 3: Haptics - a.]]*) #TODO 
+	- (*[[#^exercise-3b|Exercise 3: Haptics - b.]]*) #TODO 
+----
+###### Original Files
+- ***Exam***:<br>![[Exam_25_01_17.jpeg]]
+- ***Solutions***:<br>![[WhatsApp Image 2017-11-21 at 12.38.50.jpeg]]<br>![[WhatsApp Image 2017-11-21 at 12.38.54.jpeg]]<br>![[WhatsApp Image 2017-11-21 at 12.38.55 (1).jpeg]]<br>![[WhatsApp Image 2017-11-21 at 12.38.57 (1).jpeg]]<br>![[WhatsApp Image 2017-11-21 at 12.38.56.jpeg]]<br>![[WhatsApp Image 2017-11-21 at 12.38.54 (1).jpeg]]

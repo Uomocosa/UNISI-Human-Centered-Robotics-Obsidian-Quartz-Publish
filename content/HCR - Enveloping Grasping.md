@@ -1,0 +1,26 @@
+---
+aliases:
+  - enveloping grasping
+---
+- ***Enveloping Grasping, definizione, spiegazione ed esempi***:<br>(*ChatGPT 4o*)
+	- ***Definizione***:<br>L'**enveloping grasping** (o **presa avvolgente**) è una tecnica di presa robotica in cui un oggetto viene completamente circondato e bloccato dalle dita del robot o dalla mano robotica, garantendo una presa stabile e sicura.<br>Questa presa mira a distribuire le forze su più punti di contatto, rendendo difficile il movimento dell'oggetto all'interno della presa.
+	- ***Spiegazione***:<br>Nell'enveloping grasping, le dita del robot avvolgono l'oggetto in modo tale che le superfici di contatto siano estese e non concentrate in pochi punti.<br>L'obiettivo è minimizzare il rischio che l'oggetto scivoli o si muova durante la manipolazione, utilizzando una presa più "sicura" rispetto a una presa di precisione, che potrebbe coinvolgere solo la punta delle dita.
+		- Caratteristiche principali:
+		- **Stabilità**: Poiché l'oggetto è completamente circondato, le forze esercitate dalle dita del robot sono distribuite su un'ampia area, aumentando la stabilità della presa.
+		- **Resistenza a forze esterne**: L'enveloping grasping è particolarmente efficace quando l'oggetto deve essere manipolato in ambienti dove possono esserci forze esterne che potrebbero causare lo slittamento o il movimento dell'oggetto.<br>La presa avvolgente aiuta a prevenire questi movimenti.
+		- **Maggiore attrito**: L'aumento dei punti di contatto e l'area di contatto consentono una migliore gestione delle forze di attrito, che giocano un ruolo importante nella stabilità della presa.
+		- ***Forze nell'enveloping grasping***:<br>Durante la presa, le forze esercitate dalle dita del robot agiscono principalmente nella **direzione normale** alla superficie dell'oggetto.<br>Questo garantisce che la presa sia abbastanza forte da prevenire lo slittamento.<br>In molti casi, il **cono d'attrito** viene utilizzato per modellare e calcolare la distribuzione delle forze, assicurando che tutte le forze rimangano all'interno di questo cono per garantire stabilità.
+	- ***Esempio pratico***:<br>Immagina un robot che deve afferrare e sollevare una bottiglia cilindrica:
+		- In una presa avvolgente, le dita del robot circondano la bottiglia in più punti, garantendo che la bottiglia sia completamente bloccata all'interno della presa.<br>Questa presa è sicura perché le forze sono distribuite su un'ampia area della bottiglia e l'oggetto è completamente circondato.
+		- In confronto, in una presa di precisione (come quella usata per afferrare una penna), le dita del robot utilizzano solo la punta per trattenere l'oggetto.<br>Anche se questa presa può essere molto precisa, non è altrettanto stabile rispetto alla presa avvolgente.
+	- ***Applicazione nell'industria***:<br>L'enveloping grasping è ampiamente utilizzato in robotica industriale per manipolare oggetti che devono essere trasportati o spostati senza il rischio di cadere.<br>Esempi includono:
+		- **Presa di oggetti pesanti**: Se un robot deve afferrare una scatola o un pezzo di metallo pesante, l'enveloping grasping offre una presa sicura per il trasporto, riducendo il rischio di slittamento o caduta.
+		- **Manipolazione di oggetti delicati**: In alcuni casi, la presa avvolgente viene utilizzata per manipolare oggetti fragili, poiché la distribuzione delle forze su più punti aiuta a prevenire danni.
+	- ***Differenza con il Precision Grasping***:
+		- **Enveloping Grasping**: Le dita del robot circondano completamente l'oggetto.<br>L'attenzione è sulla sicurezza e sulla stabilità della presa, piuttosto che sulla precisione.<br>Questo tipo di presa è ideale per oggetti più grandi o più pesanti.
+		- **Precision Grasping**: Le dita del robot afferrano l'oggetto con le punte, garantendo un controllo più preciso sul movimento relativo tra l'oggetto e il robot.<br>È ideale per oggetti piccoli o che richiedono un alto grado di controllo.
+	- ***Limiti***:
+		- **Minor precisione**: Rispetto a una presa di precisione, l'enveloping grasping offre meno controllo sull'orientamento e il movimento fine dell'oggetto, quindi non è ideale per compiti che richiedono molta precisione.
+		- **Forma dell'oggetto**: Questa presa funziona meglio con oggetti che hanno una forma adatta a essere circondata dalle dita del robot, come oggetti cilindrici o cubici.
+	- ***Conclusione***:<br>L'enveloping grasping è una delle tecniche di presa più comuni in robotica, poiché offre stabilità, sicurezza e robustezza nel manipolare una vasta gamma di oggetti.<br>Tuttavia, non è ideale per situazioni in cui è richiesto un alto grado di precisione nel posizionamento o nel controllo dell'oggetto.
+----

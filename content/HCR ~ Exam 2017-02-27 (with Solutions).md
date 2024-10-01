@@ -1,0 +1,19 @@
+- ***Exercise 1: Linear Algebra***  ^exercise-1
+	- Find the solution(s) of this linear system:$$Ax = y$$Where:$$A = \left[\begin{array}{l} 2 & 3 & 4 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right] \kern5px, \kern15px y= \left[\begin{array}{l} 1 \\ 2 \\2 \end{array}\right]$$**Tip**: Solve the problem using the concept of [[HCR - Rango Massimo|RANK of matrices]] and discuss how many solutions the system has.
+- ***Exercise 2: Grasping*** 
+	- Discuss how to equilibrate external wrenches $w$ applied on the object with a grasp matrix having matrix $G$. How do you choose contact forces in $\omega = -G \lambda$.<br>Assume that the grasp has 3 hard finger contacts. ^exercise-2
+- ***Exercise 3: Haptics*** 
+	- ***(a)*** What are the triangular meshes of a surface? ^exercise-3a
+	- ***(b)*** Why you use the concept of interpolation? ^exercise-3b
+	- ***(c)*** Discuss the multiple fingers interaction. ^exercise-3c
+----
+- ***Solutions*** 
+	- (*[[#^exercise-1|Exercise 1: Linear Algebra]]*) #TODO #NOT_SURE_ABOUT_THIS `I will give my response, I don't know if its correct, I don't understand the one given in the PDFs`<br>First we find the determinant of the matrix $A$ using the [[HCR - Rule of Sarrus|rule of Sarrus]], then if the determinant is $0$ we will say that the rank of the matrix is NOT full, so it will not exist a solution for the linear equation.<br>While if $\det(A) \neq 0$, then we will say that $A$ has **full rank**, so it is invertible and the solution can be found by solving the following equation:$$y = A^{-1}x$$ 
+	- (*[[#^exercise-2|Exercise 2: Grasping]]*) ⇒ Same as: [[HCR ~ Exam 2017-04-04 (with Solutions)|exam (2017 04 04)]].
+	- (*[[#^exercise-3a|Exercise 3: Haptics - a.]]*) #TODO 
+	- (*[[#^exercise-3b|Exercise 3: Haptics - b.]]*) #TODO 
+	- (*[[#^exercise-3c|Exercise 3: Haptics - c.]]*) #TODO 
+----
+###### Original Files
+- ***Exam***:<br>![[Exam_27_02_17.jpeg]]
+- ***Solutions***:<br>![[WhatsApp Image 2017-11-21 at 12.38.52.jpeg]]<br>![[WhatsApp Image 2017-11-21 at 12.38.56 (1).jpeg]]<br>![[WhatsApp Image 2017-11-21 at 12.38.57.jpeg]]

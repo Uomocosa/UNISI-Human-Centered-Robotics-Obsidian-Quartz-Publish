@@ -1,4 +1,8 @@
-# Minimum Distance Point-Surface
+---
+aliases:
+  - Minimum Distance Point-Surface
+---
+
 ![[Pasted image 20220328145142.png]]
 
 It's easy to know if you are "in" or "out" of a single **plane**

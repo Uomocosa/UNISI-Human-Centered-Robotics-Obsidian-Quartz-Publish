@@ -1,9 +1,12 @@
-# Psychometric Function
+---
+aliases:
+  - psychometric function
+---
 Stimulus intensity is plotted on the abscissa and the proportion of yes responses is plotted on the ordinate.
 
 The absolute threshold is defined as the stimulus intensity for which the proportion of trials resulting in yes response is 50%.
 
-![[Pasted image 20220304112022.png]]
+![[Pasted image 20220304112022.png|333]]
 
 In this case the 50% does not correspond to any of the stimuli used and the curve must be fitted and the threshold estimated.
 

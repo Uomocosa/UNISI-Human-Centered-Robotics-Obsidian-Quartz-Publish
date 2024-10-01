@@ -4,4 +4,4 @@
 ![[HCR - Definition of 'Compliance']]
 
 ---
-![[HCR - Transparency]]
+![[Notes & Images/HCR - Transparency]]

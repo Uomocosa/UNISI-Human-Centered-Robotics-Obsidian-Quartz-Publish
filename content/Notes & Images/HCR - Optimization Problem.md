@@ -1,4 +1,8 @@
-### Optimization Problem
+---
+aliases:
+  - Optimization Problem
+---
+
 We can also see this as an optimization problem:
 $$
 \begin{array}{l}

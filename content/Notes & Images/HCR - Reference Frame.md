@@ -1,4 +1,7 @@
-# Reference Frame
+---
+aliases:
+  - reference frame
+---
 The reference frame is a 3 axis system that are usually connected by a body, an object or a system that can be used to acquire information or transmit information.
 For example a camera can be a reference frame, when you record a video, you are recording from a fixed point of view, the lenses of the camera, which has a **mean direction**.
 We can use the object frame (the camera) as reference for a robotic arm that gets information from it, so the camera becomes our **reference frame**.

@@ -1,164 +1,74 @@
 # Human Centered Robotics
-- Corso del 1° Anno di Magistrale (1° Semestre).
-- Docente: **Domenico Prattichizzo**.
-- [Link to Drive with Video Lectures](https://drive.google.com/drive/u/1/folders/1pAW73AgqAlQBOK8exP3sQbLQG0yAlR8j)
-										<br>
----
-## Perquisites:
----
-## Contents and Program:
-- ###### *Introduction*
-	- [[DES - Differences Between Time-Driven Dynamics and Event-Driven Dynamics|Differences Between Time-Driven Dynamics and Event-Driven Dynamics]]
-- ###### *Untimed models of discrete event systems*
-	- [[DES - What are Discrete Systems|What are Discrete Systems]]
-	- [[DES - Model of a State Automata|Model of an Event-Driven Discrete System]]
-- ###### *Timed models of discrete event systems*
-	- 
-- ###### *Stochastic timed models of discrete event systems*
-	- 
-- ###### *Markov chains*
-	- 
-- ###### *Queuing theory*
-	- 
-- ###### *Markovian queuing networks*
-	- 
----
-### Lectures
-Linked Togheter | Original
---------------|-----------
-[[HCR - Lecture 1]] | [[HCR - Lecture 1 (Original)]]
-[[HCR - Lecture 2]] | [[HCR - Lecture 2 (Original)]]
-[[HCR - Lecture 3]] | [[HCR - Lecture 3 (Original)]]
-[[HCR - Lecture 4]] | [[HCR - Lecture 4 (Original)]]
-[[HCR - Lecture 5]] | [[HCR - Lecture 5 (Original)]]
-[[HCR - Lecture 6]] | [[HCR - Lecture 6 (Original)]]
-[[HCR - Lecture 7]] | [[HCR - Lecture 7 (Original)]]
-[[HCR - Lecture 8]] | [[HCR - Lecture 8 (Original)]]
-[[HCR - Lecture 9]] | [[HCR - Lecture 9 (Original)]]
-[[HCR - Lecture 10]] | [[HCR - Lecture 10 (Original)]]
-
----
-# Concepts
-##### Mathematics for Robotics
-[[HCR - Reference Frame]]
-[[HCR - Pose of a Rigid Body]]
-[[HCR - Rotation Matrix]]
-[[HCR - Definition of 'Elementary Rotation']]
-[[HCR - Composition of Elementary Rotation]]
-[[HCR - Rotation Matrices Descriptors]]
-[[HCR - Rotation Matrix Descriptor 'Euler Angles']]
-[[HCR - Rotation Matrix Descriptor 'RPY Angles']]
-[[HCR - Rotation Matrix Descriptor 'Angle and Axis']]
-[[HCR - Rotation Matrix Descriptor 'Quaternion']]
-[[HCR - Homogeneous Transformation Matrix]]
-
----
-##### Psychophysics
-[[HCR - Definition of 'Psychophysics']]
-[[HCR - Definition of 'Absolute Threshold']]
-[[HCR - Definition of 'Differential Threshold']]
-[[HCR - Sensation Dimensions]]
-[[HCR - Absolute Threshold vs Differential Threshold]]
-[[HCR - Psychophysical Measurement Methods]]
--> [[HCR - Methods of Constant Stimuli]]
-	-> [[HCR - Psychometric Function]]
-	-> [[HCR- YES-NO Procedure]]
-	-> [[HCR - nAFC (n Alternatives Forced Choice) Procedure]]
-	-> [[HCR - Method of Constant Stimuli (Differential Threshold)]]
--> [[HCR - Method of Limits]]
-	-> [[HCR - Staircase Method]]
-[[HCR - PSE (Point of Subjective Equality)]]
-[[HCR - Experiments Design Guidelines and Motivations]]
-[[HCR - Weber's Law]]
-[[HCR - Interval of Uncertainty]]
-
----
-##### Haptic Control
-[[HCR - Instability in Haptics]]
-[[HCR - Force Response for Haptic Control]]
-
----
-##### IRL Objects to Triangular Meshes
-[[HCR - Triangular Meshes]]
-[[HCR - Bounding Box]]
-[[HCR - Interpolation]]
-[[HCR - How to select a sample triangle]]
-
----
-##### Proxy Algorithm with Friction Cones
-[[HCR - Minimum Distance Point-Surface]]
-[[HCR - Algorithm for Minimum Distance from Surface]]
-[[HCR - Optimization Problem]]
-[[HCR - Proxy Point for Triangular Meshes]]
-[[HCR - Proxy Algorithm]]
-[[HCR - Friction Cone]]
-[[HCR - Proxy Algorithm with Friction Cones]]
-[[HCR - Static and Kinematic Friction]]
-
----
-##### Transparency
-[[HCR - Definition of 'Impedance']]
-[[HCR - Definition of 'Compliance']]
-[[HCR - Transparency]]
-
----
-##### Real World Problem
-[[HCR - Human Eye vs Camera]]
-[[HCR - Cinema 3D]]
-[[HCR - Augmented Reality]]
-
----
-##### Discrete Time Approximation
-[[HCR - System of Ordinary Differential Equations]]
-[[HCR - Discrete Time]]
-[[HCR - Euler's Method]]
-[[HCR - Mid Point Method]]
-
----
-##### Grasping vs Manipulation
-[[HCR - Grasping vs Manipulation]]
-[[HCR - IN-HAND MANIPULATION]]
-[[HCR - POWER GRASP]]
-[[HCR - Friction Cone]]
-[[HCR - Representation of Forces on the Reference Frame]]
-[[HCR - Definition of 'Wrench']]
-[[HCR - Definition of 'External Wrench']]
-[[HCR - Grasp Matrix]]
-[[HCR - Change of the Normal during Grasping]]
-
----
-##### Hand Jacobian
-[[HCR - Chain of Joints]]
-[[HCR - Chains of Joints that Refers to the Same End-Effector]]
-[[HCR - Hard Fingers]]
-[[HCR - Calculating the Hand Jacobian]]
-
----
-##### Searching for a Grasp Matrix with Infinte Solutions
-[[HCR - Solution of a Linear System]]
-[[HCR - Theorem 'At Least One Solutions for a Grasp Matrix']]
-[[HCR - Lemma 'Infinite Solutions for a Grasp Matrix']]
-
----
-##### Idea: 'Green Robots'
-[[HCR - Green Robots]]
-
----
-###### ~Ex.: Calculate Controlled Forces
-[[HCR - Calculating the Controlled Forces]]
-
----
-- #TODO [[HCR - Direct Kinematics]] (???)
-- #TODO [[HCR - Haptic Display]] (???)
-
----
+- Corso del 1° Anno di Magistrale (1° Semestre). 
+- Docente: **Domenico Prattichizzo**. 
+- [Link to Drive with Video Lectures](https://drive.google.com/drive/u/1/folders/1pAW73AgqAlQBOK8exP3sQbLQG0yAlR8j) 
+- [[HCR - Handwritten Notes (Not Mine)|Handwritten Notes]] 
+- [[HCR - Index for the 2020 Online Lectures|Old index]] (*not so good notes not so bad notes, they need to be revised, but at least they are written in english, a not-so-grammatically-correct english*)
+----
+## Introduzione Generale al Corso
+(*ChatGPT 4o*)
+1. **Basi del Movimento e Sistemi di Riferimento**: Qui si affronta il problema di descrivere la posizione e l'orientamento degli oggetti in uno spazio tridimensionale, utilizzando vettori e matrici di trasformazione per passare da un sistema di riferimento a un altro.<br>La traslazione e la rotazione sono le operazioni principali, e si fa uso delle matrici di rotazione (come la matrice di rotazione $Rz$) per descrivere il cambiamento di coordinate tra sistemi diversi.
+2. **Cinematica Diretta dei Manipolatori Robotici**: Viene descritta la struttura di un manipolatore robotico, costituito da "link" (rigidi) e "joint" (prismatici o revoluti).<br>La cinematica diretta permette di calcolare la posizione dell'end-effector del robot dati gli angoli di giunzione, mentre la cinematica inversa serve per calcolare i comandi necessari per raggiungere una certa posizione (anche se questa è considerata più complessa).
+3. **Grasping**: Questo concetto riguarda l'atto di afferrare e manipolare oggetti tramite un robot.<br>Si distingue tra due tipi di grasping:
+	- **Grasping di potenza**: mira a mantenere stabile un oggetto.
+	- **Grasping di precisione**: permette movimenti più raffinati tra l'oggetto e il palmo del robot.
+	- L'applicazione delle forze durante il grasping viene descritta matematicamente, ad esempio con l'uso della matrice Jacobiana, che lega le forze applicate all'oggetto ai momenti torcenti nei giunti del robot.
+4. **Aptica e Rilevamento delle Collisioni**: L'aptica è una tecnologia che permette ai robot di "sentire" e interagire tramite il tatto.<br>Si utilizzano algoritmi per il rilevamento delle collisioni e per restituire un feedback tattile all'utente, spesso con la creazione di una bounding box intorno a oggetti virtuali per rilevare il contatto.<br>La parte del rendering aptico riguarda la risposta in termini di forza che un robot dà quando tocca un oggetto.
+5. **Trasparenza**: La trasparenza è un concetto che indica la capacità di un sistema robotico di simulare in modo realistico la dinamica di un oggetto, minimizzando l'effetto delle dinamiche del robot stesso.<br>Si cerca di rendere la dinamica dell'ambiente virtuale percepibile, riducendo l'inerzia e l'attrito del braccio robotico, per garantire che l'interfaccia sembri il più naturale possibile.
+----
+## Concepts
+- ***[[HCR - Basi del Movimento (Lecture)|Basi del Movimento]]***:
+	- [[HCR - Regola del Parallelogramma]]
+	- [[HCR - Cambio del Sistema di Riferimento]]
+	- [[HCR - Catena Cinemantica]]
+	- [[HCR - Metodo di Eulero]]
+	- [[HCR - Trasformazione Omogenea]]
+	- [[HCR - Vettori Omogenei]]
+	- [[HCR - Matrice di Rotazione]]
+- ***[[HCR - Cinematica Diretta di un Manipolatore Robotico (Lecture)|Cinematica Diretta di un Manipolatore Robotico]]***:
+	- [[HCR - Gradi di Libertà]]
+	- [[HCR - Catena Cinemantica]]
+	- [[HCR - Cinematica Diretta]]
+	- [[HCR - Convezione di Denavit-Hartenberg]]
+- ***[[HCR - Grasping (Lecture)|Grasping]]***:
+	- [[HCR - Matrice Jacobiana]]
+	- [[HCR - Screw Matrix]]
+	- [[HCR - Regola della Mano destra]]
+	- [[HCR - Catena Cinemantica]]
+	- [[HCR - Calcolo della Matrice Jacobiana 'della Mano']]
+	- [[HCR - Calcolo della Potenza di Contatto]]
+	- [[HCR - Kernel • Nullspace]]
+- ***[[HCR - Grasp Matrix (Lecture)|Grasp Matrix]]***:
+	- [[HCR - Grasp Matrix • Matrice di Grasp]]
+	- [[HCR - Baricentro]]
+	- [[HCR - Momento Torcente]]
+	- [[HCR - Kernel • Nullspace]]
+	- [[HCR - Attrito Statico]]
+	- [[HCR - Cono d'Attrito]]
+	- [[HCR - Direzione Normale]]
+	- [[HCR - Coefficiente d'Attrito]]
+	- [[HCR - Enveloping Grasping]]
+	- [[HCR - Kernel • Nullspace]]
+	- [[HCR - Rango Massimo]]
+- ***[[HCR - Haptics (Lecture)|Haptics]]***:
+	- [[HCR - Simulation Engine]]. #IMPORTANTE 
+	- [[HCR - Processo Aptico]]:
+		1. ***[[HCR - Psychophysical Measurement Methods|Misura del Movimento]]***.
+		2. ***[[HCR - Collision Detection (Lecture)|Rilevamento delle Collisioni]]***. #IMPORTANTE 
+		3. ***[[HCR - Rendering Aptico (Lecture)|Rendering Aptico]]***. #IMPORTANTE 
+- ***[[HCR - Force Feedback (Lecture)|Force Feedback]]***.
+- ***[[HCR - Oggetti Dinamici (Lecture)|Oggetti Dinamici]]***.
+- ***[[HCR - Transparency (Lecture)|Transparency]]***.
+----
 ## Exercises:
-[[HCR ~ exam 2022 01 26 with solutions]]
-[[HCR ~ exam 2017_02_27]]
-[[HCR ~ exam 2017_10_27]]
-[[HCR ~ exam 2017_04_04]]
+- [[HCR ~ Exam 2022-01-26]] #TODO 
+- [[HCR ~ Exam 2017-04-04 (with Solutions)]] #TODO 
+- [[HCR ~ Exam 2017-02-27 (with Solutions)]] #TODO 
+- [[HCR ~ Exam 2017-01-25 (with Solutions)]] #TODO 
+	- [[HCR ~ Loop Aptico con Retroazione]] 
+	- [[HCR ~ Trovare la Grasp Matrix senza Calcoli]]
+- ***Original Files***:![[Human Centered Robotics-20240827T093604Z-001 1.zip]]
 
----
 ----
 ###### All My Notes
 For the best experience in reading these and all other notes, and also if you wish to EDIT them, do as follows: 

@@ -13,7 +13,7 @@
 ![[HCR - Discrete Time]]
 
 ---
-![[HCR - Euler's Method]]
+![[HCR - Metodo di Eulero]]
 
 ---
 ![[HCR - Mid Point Method]]

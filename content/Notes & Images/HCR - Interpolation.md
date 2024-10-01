@@ -1,7 +1,13 @@
-# Interpolation
+---
+aliases:
+  - interpolation
+---
+#NOT_SURE_ABOUT_THIS `We consider to have the normal to each point/vertex of the triangular mesh, actually we should have the normal of each TRIANGLE of the mesh, so we would need to interpolate especially when we are near a vertex`
+
+----
 For each triangle in our triangular mesh there is only one normal, to solve thins, we can then make an interpolation:
 ![[Pasted image 20220404094945.png]]
--> So the normal now becomes a smooth function (always depending on the position), before as we can see in the figure we have that the normal is constant for each triangle so we have a non-smooth transition when we pass from one triangle to another.
+- So the normal now becomes a smooth function (always depending on the position), before as we can see in the figure we have that the normal is constant for each triangle so we have a non-smooth transition when we pass from one triangle to another.
 
 When we have fewer points then we can take the interpolation:
 ![[Pasted image 20220404100053.png]]

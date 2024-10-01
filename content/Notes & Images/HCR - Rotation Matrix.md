@@ -1,7 +1,12 @@
-# Rotation Matrix
+---
+aliases:
+  - rotation matrix
+  - rotation matrices
+---
+Given two [[HCR - Reference Frame|reference frames]] like so:
 ![[Pasted image 20220303101837.png]]
 
-I can try to write something like this:
+We can write:
 $$
 \left\{
 \begin{array}{l}
@@ -12,7 +17,7 @@ y'  = y'_x \cdot x + y'_y \cdot y + y'_z \cdot z
 z'  = z'_x \cdot x + z'_y \cdot y + z'_z \cdot z
 \end{array}
 \right. 
-\kern 15 px \to \kern 15 px
+\kern 30 px \to \kern 30 px
 \left[
 \begin{array}{l}
 x'
@@ -22,7 +27,7 @@ y'
 z'
 \end{array}
 \right]
-\kern 15 px = \kern 15 px
+= 
 \bar{\bar{R}}
 \left[
 \begin{array}{l}
@@ -33,7 +38,6 @@ y
 z
 \end{array}
 \right]
-
 $$
 Where for example $z'_x, \ z'_y, \ z'_z$ is defined as:
 ![[Pasted image 20220303102512.png]]

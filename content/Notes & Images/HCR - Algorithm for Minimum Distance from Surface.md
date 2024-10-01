@@ -1,4 +1,8 @@
-# Algorithm
+---
+aliases:
+  - Algorithm for Minimum Distance from Surface
+---
+
 Given $x_h$ haptic point (same as $x_a$ just a different name):
 $$
 x_h = \ <x_{hx}, \ x_{hy}, \ x_{hz}>
