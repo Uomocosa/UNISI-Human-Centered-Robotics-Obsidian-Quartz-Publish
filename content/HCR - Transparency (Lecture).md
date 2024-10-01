@@ -11,10 +11,11 @@ aliases:
 > "==*Un sistema si definisce trasparente se l'unica dinamica è quella dell'oggetto virtuale*==".
 
 > ***[[HCR - Definition of 'Impedance'|Impedenza]]***:
-> Si definisce impedenza il rapporto tra **forza** e velocità di un robot:$$Z = {F \over V}$$
+> Si definisce impedenza il rapporto tra **forza** e **velocità** di un robot:$$Z = {F \over V}$$
 
 > ***Sistema dinamico di un semplice robot che funge da interfaccia utente***:<br>![[Pasted image 20240905123302 - Copy.png]]
 > Di sotto la spiegazionie/passaggi.
+> #NOT_SURE_ABOUT_THIS `Credo che in input sia necessaria solo` $-J^{\tiny T} F(s)$ `in quanto` $\tau(s)$ `viene data dalla controreazione, ovvero da` $J^{\tiny T} \cdot F_h(s) = \tau(s)$.
 
 > ***Calcoli/Spiegazione del sistema dinamico***:
 >  1. Partiamo dal segeuente robot:<br>![[Pasted image 20240919173300.png]]<br>E definiamo la sua dinamica come:$$M \ddot x_0(t) = F - B \dot x_0(t) - kx_0(t)$$
@@ -27,9 +28,9 @@ aliases:
 > 4. Applicando nuovamente **Laplace** a quest'ultima equazione troviamo:$$s \cdot \Theta(s)  = \left(I_{\kern-2px\tiny R} \kern1px s + B_{\kern-2px\tiny R} \kern1px \right)^{-1} \left[ \tau(s) - J^{\tiny T} \kern-1px F(s) \right]$$
 > 5. E definiamo l'**impedenza dei joint** come:$$\left(I_{\kern-2px\tiny R} \kern1px s + B_{\kern-2px\tiny R} \kern1px \right) := Z_j$$
 > 6. Ricordando la definizone di $x_h$ data [[HCR - Force Feedback (Lecture)|in precedenza]], ovvero "*la posizione dell'end-effector nell'ambiente virtuale*", la definizione di ***impedenza*** data in questa lezione:$$F = Z\cdot V$$Ed infine utilizziamo Lapace per scrivere:$$V(s) = s\cdot X_h(s)$$Quindi, possiamo dire che la dinamica **del solo ambiente virtuale** è data da:$$F_h(s) = Z_{\kern-1px \tiny E}(s) \cdot s \cdot X_h(s) \kern30px$$
-> 8. La forza totale percepita invece è:$$F(s) = Z_{\tiny \text{MF}}(s) \cdot s \cdot x_h(s)$$
-> 9. Facendo gli opportuni calcoli andremo a trovare:$$F(s) = \underbrace{\kern-2.5px\left(-J^{\tiny T} Z_j J^{-1} + Z_{\kern-1px \tiny E} \right)\kern-7px}_{\huge Z_{\normalsize MF}}\kern5px \cdot s \cdot X_h(s)$$
-> 10. In fine per ottenere $Z_{\tiny MF} = Z_E$ ovvero, avere che l'impedenza percepita è uguale alla sola impedenza virtuale, quindi avere un **sistema trasparente**, dovremo portare:$$-J^{\tiny T} \kern1px Z_{\tiny \text{J}} \kern2px J^{-1}=0$$E ciò è possobile solo azzerando l'ineriza, quindi il peso del braccio e l'attrito dei **joints**.<br>==Ovviamente **non è possibile** portare a $0$ il peso del braccio e l'attrito dei joints, possimo solo avvicinarci ad un sistema propiamente trasparente==.
+> 7. La forza totale percepita invece è:$$F(s) = Z_{\tiny \text{MF}}(s) \cdot s \cdot x_h(s)$$
+> 8. Facendo gli opportuni calcoli andremo a trovare:$$F(s) = \underbrace{\kern-2.5px\left(-J^{\tiny T} Z_j J^{-1} + Z_{\kern-1px \tiny E} \right)\kern-7px}_{\huge Z_{\normalsize MF}}\kern5px \cdot s \cdot X_h(s)$$
+> 9. In fine per ottenere $Z_{\tiny MF} = Z_E$ ovvero, avere che l'impedenza percepita è uguale alla sola impedenza virtuale, quindi avere un **sistema trasparente**, dovremo portare:$$-J^{\tiny T} \kern1px Z_{\tiny \text{J}} \kern2px J^{-1}=0$$E ciò è possibile solo azzerando l'ineriza, quindi il peso del braccio e l'attrito dei **joints**.<br>==Ovviamente **non è possibile** portare a $0$ il peso del braccio e l'attrito dei joints, possimo solo avvicinarci ad un sistema propiamente trasparente==.
 
 ----
 La transparenza è un concetto legato alla dinamica dell'ambiente composto da un robot, che funge da interfaccia utente, e in questo caso, in simulatore virtuale dell'oggetto e della sua dinamica.
